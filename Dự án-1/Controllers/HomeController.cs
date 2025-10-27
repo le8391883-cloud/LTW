@@ -26,5 +26,9 @@ namespace Dự_án_1.Controllers
 
             return View();
         }
+        public ActionResult Login()
+        {
+            return View();
+        }
     }
 }
