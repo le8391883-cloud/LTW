@@ -16,6 +16,7 @@
     @RenderSection("Styles", required: false)
 </head>
 <body>
+    @* 1. Header*@
     <header>
         <img src="~/image/logo/ảnh 1.jpg" alt="">
     </header>
@@ -25,10 +26,10 @@
                 <li><a href=""><img style="width: 200px;" src="~/image/logo/cellphones-logo-ngang.jpg" alt=""></a></li>
                 <li id="adress-form"><a href="#">Tây Ninh<i class="fas fa-sort-down"></i></a></li>
                 <li><input type="text" placeholder="Bạn muốn mua gì..."><i class="fas fa-search"></i></li>
-                <li><a href=""></a><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></li>
-                <li><a href=""></a><button><i class="fas fa-file"></i>Tra cứu đơn hàng</button></li>
-                <li><a href=""></a><button><i class="fas fa-house-user"></i>Cửa hàng gần bạn</button></li>
-                <li><a href="~/Views/Home/Login.cshtml"></a><button><i class="fas fa-user"></i>Đăng nhập</button></li>
+                <li><a href=""><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></a></li>
+                <li><a href=""><button><i class="fas fa-file"></i>Lịch sử đơn hàng</button></a></li>
+                <li><a href=""><button><i class="fas fa-house-user"></i>Cửa hàng gần bạn</button></a></li>
+                <li><a href="~/Views/Home/Login.cshtml"><button><i class="fas fa-user"></i>Đăng nhập</button></a></li>
                 <div class="adress-form">
                     <div class="adress-form-content">
                         <h2>Chọn địa chỉ nhận hàng <span id="adress-close">Đóng X</span></h2>
@@ -565,17 +566,46 @@
         </div>
     </section>
     @* Nội dung riêng của từng View sẽ được đặt tại đây *@
+    @* 2. Body *@
+
     @RenderBody()
 
+    @* 3. Footer *@
     <footer>
         <div class="container">
             <div class="footer-one-content">
-                <div class="footer-links">
-                    <a href="~/Views/Home/Information.cshtml">Thông tin</a>
-                    <a href="~/Views/Home/Policy.cshtml">Thông tin về chính sách</a>
-                    <a href="~/Views/Home/Services.cshtml">Dịch vụ và thông tin khác</a>
-                    <a href="~/Views/Home/Support.cshtml">Tổng đài hỗ trợ miễn phí</a>
-                </div>
+                <footer>
+                    <div class="container">
+                        <div class="footer-one-content">
+                            <div class="footer-col">
+                                <h3><a href="~/Views/Home/Information.cshtml">Tổng đài hỗ trợ miễn phí</a></h3>
+                                <p>Mua hàng - bảo hành 1800.2097 (7h30 - 22h00)</p>
+                                <p class="highlight">Khiếu nại 1800.2063 (8h00 - 21h30)</p>
+                            </div>
+                            <div class="footer-col">
+                                <h3>Thông tin về chính sách</h3>
+                                <ul>
+                                    <li><a href="#">Mua hàng và thanh toán Online</a></li>
+                                    <li><a href="#">Chính sách đổi trả</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h3>Dịch vụ và thông tin khác</h3>
+                                <ul>
+                                    <li><a href="~/Views/Home/Services.cshtml">Khách hàng doanh nghiệp (B2B)</a></li>
+                                    <li><a href="#">Ưu đãi thanh toán</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h3>Kết nối với CellphoneS</h3>
+                                <i class="fab fa-youtube"></i>
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
     </footer>
