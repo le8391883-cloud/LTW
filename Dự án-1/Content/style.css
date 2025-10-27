@@ -1,0 +1,166 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-color: #E24C5A;
+    text-align: center;
+}
+/*-----------------------nav--------------------------------*/
+nav {
+    background-color: #D91926;
+}
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        nav ul li, a {
+            color: white;
+            font-size: 12px;
+        }
+
+            nav ul li:nth-child(2) a {
+                color: black;
+            }
+
+            nav ul li:nth-child(2) i {
+                color: black;
+                font-size: 15px;
+                margin-left: 6px;
+            }
+
+            nav ul li:nth-child(3) {
+                position: relative;
+            }
+
+                nav ul li:nth-child(3) input {
+                    height: 30px;
+                    width: 100%;
+                    border-radius: 5px;
+                    border: none;
+                    padding-left: 6px;
+                    outline: none;
+                }
+
+                nav ul li:nth-child(3) i {
+                    position: absolute;
+                    font-size: 15px;
+                    right: 12px;
+                    color: #333;
+                    line-height: 30px;
+                    cursor: pointer;
+                }
+
+            nav ul li:nth-child(4) button {
+                height: 30px;
+                padding: 0 12px;
+                cursor: pointer;
+                background-color: transparent;
+                color: white;
+                border: 1px solid #D91926;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+                nav ul li:nth-child(4) button i {
+                    margin-left: 6px;
+                }
+
+                nav ul li:nth-child(4) button:hover {
+                    background-color: rgb(169, 45, 45);
+                }
+
+            nav ul li:nth-child(5) button {
+                height: 30px;
+                padding: 0 12px;
+                cursor: pointer;
+                background-color: transparent;
+                color: white;
+                border: 1px solid #D91926;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+                nav ul li:nth-child(5) button i {
+                    margin-left: 6px;
+                }
+
+                nav ul li:nth-child(5) button:hover {
+                    background-color: rgb(169, 45, 45);
+                }
+
+            nav ul li:nth-child(6) button {
+                height: 30px;
+                padding: 0 12px;
+                cursor: pointer;
+                background-color: transparent;
+                color: white;
+                border: 1px solid #D91926;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+                nav ul li:nth-child(6) button i {
+                    margin-left: 6px;
+                }
+
+                nav ul li:nth-child(6) button:hover {
+                    background-color: rgb(169, 45, 45);
+                }
+
+            nav ul li:nth-child(7) button {
+                height: 30px;
+                padding: 0 12px;
+                cursor: pointer;
+                background-color: transparent;
+                color: white;
+                border: 1px solid #D91926;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+                nav ul li:nth-child(7) button i {
+                    margin-left: 6px;
+                }
+
+                nav ul li:nth-child(7) button:hover {
+                    background-color: rgb(169, 45, 45);
+                }
+/*--------------------------------------menu-bar---------------------------*/
+.menu-bar {
+    background-color: rgb(238, 121, 121);
+}
+
+    .menu-bar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .menu-bar ul li a {
+            color: black;
+            font-size: 15px;
+        }
+
+            .menu-bar ul li a i {
+                margin-right: 6px;
+                font-size: 20px;
+            }
