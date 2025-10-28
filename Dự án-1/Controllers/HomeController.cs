@@ -30,5 +30,13 @@ namespace Dự_án_1.Controllers
         {
             return View();
         }
+        public ActionResult Phone()
+        {
+            return View();
+        }
+        public ActionResult HomePage()
+        {
+            return View();
+        }
     }
 }

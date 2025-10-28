@@ -143,6 +143,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\caterogry.css" />
+    <Content Include="Content\footer.css" />
+    <Content Include="Content\header.css" />
     <Content Include="Content\login.css" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
@@ -197,13 +200,16 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Login.cshtml" />
-    <Content Include="Views\Home\HomePage.cshtml" />
-    <Content Include="Views\Home\Information.cshtml" />
-    <Content Include="Views\Home\Support.cshtml" />
-    <Content Include="Views\Home\Policy.cshtml" />
-    <Content Include="Views\Home\Services.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Home\Shoppingcart.cshtml" />
+    <Content Include="Views\Home\Phone.cshtml" />
+    <Content Include="Views\Home\Laptop.cshtml" />
+    <Content Include="Views\Home\Headphone.cshtml" />
+    <Content Include="Views\Home\Dongho.cshtml" />
+    <Content Include="Views\Home\PC.cshtml" />
+    <Content Include="Views\Home\Phukien.cshtml" />
+    <Content Include="Views\Home\TV.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
