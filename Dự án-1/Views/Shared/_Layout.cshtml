@@ -26,7 +26,7 @@
         <div class="container">
             <ul>
                 <li><a href="@Url.Action("Index", "TrangChu")"><img style="width: 200px;" src="~/image/logo/cellphones-logo-ngang.jpg" alt=""></a></li>
-                <li id="adress-form"><a href="#">Tây Ninh<i class="fas fa-sort-down"></i></a></li>
+                <li id="adress-form"><a>Tây Ninh<i class="fas fa-sort-down"></i></a></li>
                 <li><input type="text" placeholder="Bạn muốn mua gì..."><i class="fas fa-search"></i></li>
                 <li><a href="@Url.Action("Giỏ hàng", "Home")"><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></a></li>
                 <li><a href="@Url.Action("Lịch sử", "Home")"><button><i class="fas fa-file"></i>Lịch sử đơn hàng</button></a></li>
@@ -62,7 +62,7 @@
             <div class="menu-bar-content">
                 <ul>
                     <li>
-                        <a href=""><i class="fas fa-mobile"></i>Điện thoại, Tablet<i style="font-size: 20px;" class="fas fa-sort-down"></i></a>
+                        <a href="@Url.Action("Phone", "DanhMuc")"><i class="fas fa-mobile"></i>Điện thoại, Tablet<i style="font-size: 20px;" class="fas fa-sort-down"></i></a>
                         <div class="submenu">
                             <ul>
                                 <li><a href="">Phụ kiện di động</a></li>
@@ -77,7 +77,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href=""><i class="fas fa-laptop"></i>Laptop<i style="font-size: 20px;" class="fas fa-sort-down"></i></a>
+                        <a href="@Url.Action("Laptop", "DanhMuc")"><i class="fas fa-laptop"></i>Laptop<i style="font-size: 20px;" class="fas fa-sort-down"></i></a>
                         <div class="submenu">
                             <ul>
                                 <li><a href="">Phụ kiện di động</a></li>
@@ -92,7 +92,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href=""><i class="fas fa-headphones"></i>Headphone<i style="font-size: 20px;" class="fas fa-sort-down"></i></a>
+                        <a href="@Url.Action("HeadPhone", "DanhMuc")"><i class="fas fa-headphones"></i>Headphone<i style="font-size: 20px;" class="fas fa-sort-down"></i></a>
                         <div class="submenu">
                             <ul>
                                 <li><a href="">Phụ kiện di động</a></li>
@@ -200,46 +200,8 @@
             </div>
         </div>
     </section>
-    <section class="slider">
-        <div class="container">
-            <div class="slider-content">
-                <div class="slider-content-left">
-                    <div class="slider-content-left-top-container">
-                        <div class="slider-content-left-top">
-                            <a href=""><img src="~/image/logo/slide1.jpg" alt=""></a>
-                            <a href=""><img src="~/image/logo/slide2.jpg" alt=""></a>
-                            <a href=""><img src="~/image/logo/slide3.jpg" alt=""></a>
-                            <a href=""><img src="~/image/logo/slide4.jpg" alt=""></a>
-                            <a href=""><img src="~/image/logo/slide5.jpg" alt=""></a>
-                        </div>
-                        <div class="slider-content-left-top-btn">
-                            <i class="fas fa-chevron-left"></i>
-                            <i class="fas fa-chevron-right"></i>
-                        </div>
-                    </div>
-                    <div class="slider-content-left-bottom">
-                        <li class="active">IPhone 17</li>
-                        <li>Galaxy Z Flip7 | Fold7</li>
-                        <li>Acer Gaming Nitro Lite</li>
-                        <li>AirPods Pro 3</li>
-                        <li>Ideapad Slim</li>
-                    </div>
-                </div>
-                <div class="slider-content-right">
-                    <li><a href=""><img src="~/image/logo/slide6.jpg" alt=""></a></li>
-                    <li><a href=""><img src="~/image/logo/slide7.jpg" alt=""></a></li>
-                    <li><a href=""><img src="~/image/logo/slide8.jpg" alt=""></a></li>
-                    <li><a href=""><img src="~/image/logo/slide9.jpg" alt=""></a></li>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="banner-one">
-        <div class="container">
-            <img src="~/image/logo/ảnh 1.jpg" alt="">
-        </div>
-    </section>
     
+
 
     @* Nội dung riêng của từng View sẽ được đặt tại đây *@
     @* 2. Body *@

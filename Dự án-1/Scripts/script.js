@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (adressbtn && adressclose && adressFormModal) {
         adressbtn.addEventListener("click", function (event) {
-            event.preventDefault(); // Ngăn chặn thẻ <a> nhảy trang/scroll
             adressFormModal.style.display = "flex";
         });
 
