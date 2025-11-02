@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/Content/login.css" />
+}
+
+<main>
+    <div class="account-container">
+        <header class="account-header">
+            <h1>MY ACCOUNT</h1>
+        </header>
+
+        <section class="account-content">
+            <form method="post">
+                <h2>LOGIN</h2>
+
+                <p class="form-row">
+                    <label for="username">Username or email address *</label><br>
+                    <input type="text" class="input-text" name="username" id="username" autocomplete="username">
+                </p>
+
+                <p class="form-row">
+                    <label for="password">Password *</label><br>
+                    <input type="password" class="input-text" name="password" id="password" autocomplete="current-password">
+                </p>
+
+                <p class="form-row-login">
+                    <label class="remember-me">
+                        <input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember me
+                    </label>
+                    <button type="submit" class="login-button" name="login" value="Log in">Log in</button>
+                </p>
+
+                <p class="lost-password">
+                    <a href="#">Lost your password?</a>
+                </p>
+            </form>
+        </section>
+    </div>
+</main>
+
+

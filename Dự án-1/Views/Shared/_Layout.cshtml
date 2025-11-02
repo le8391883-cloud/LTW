@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
     @* Giả sử style.css đã được thêm vào Bundles hoặc bạn cần đặt nó trực tiếp như sau: *@
-    <link rel="stylesheet" href="~/Content/style.css">
-    <link rel="stylesheet" href="~/Content/footer.css" />
-    <link rel="stylesheet" href="~/Content/header.css" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/footer.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/header.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/style.css")">
 
     <title>@ViewBag.Title - CellPhoneS</title>
 
@@ -25,13 +25,13 @@
     <nav>
         <div class="container">
             <ul>
-                <li><a href="~/Views/Home/HomePage.cshtml"><img style="width: 200px;" src="~/image/logo/cellphones-logo-ngang.jpg" alt=""></a></li>
+                <li><a href="@Url.Action("Index", "TrangChu")"><img style="width: 200px;" src="~/image/logo/cellphones-logo-ngang.jpg" alt=""></a></li>
                 <li id="adress-form"><a href="#">Tây Ninh<i class="fas fa-sort-down"></i></a></li>
                 <li><input type="text" placeholder="Bạn muốn mua gì..."><i class="fas fa-search"></i></li>
-                <li><a href=""><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></a></li>
-                <li><a href=""><button><i class="fas fa-file"></i>Lịch sử đơn hàng</button></a></li>
-                <li><a href=""><button><i class="fas fa-house-user"></i>Cửa hàng gần bạn</button></a></li>
-                <li><a href="Home/Login.cshtml"><button><i class="fas fa-user"></i>Đăng nhập</button></a></li>
+                <li><a href="@Url.Action("Giỏ hàng", "Home")"><button><i class="fas fa-shopping-cart"></i>Giỏ hàng</button></a></li>
+                <li><a href="@Url.Action("Lịch sử", "Home")"><button><i class="fas fa-file"></i>Lịch sử đơn hàng</button></a></li>
+                <li><a href="@Url.Action("Cửa hàng gần bạn", "Home")"><button><i class="fas fa-house-user"></i>Chi tiết sản phẩm</button></a></li>
+                <li><a href="@Url.Action("Index", "DangNhap")"><button><i class="fas fa-user"></i>Đăng nhập</button></a></li>
                 <div class="adress-form">
                     <div class="adress-form-content">
                         <h2>Chọn địa chỉ nhận hàng <span id="adress-close">Đóng X</span></h2>
@@ -239,203 +239,7 @@
             <img src="~/image/logo/ảnh 1.jpg" alt="">
         </div>
     </section>
-    <section class="product-gallery-one">
-        <div class="container">
-            <div class="product-gallery-one-content">
-                <div class="product-gallery-one-content-title">
-                    <h2>ĐIỆN THOẠI NỖI BẬT NHẤT</h2>
-                    <ul>
-                        <li><a href="">Xiaomi Redmi</a></li>
-                        <li><a href="">IPhone</a></li>
-                        <li><a href="">Samsung</a></li>
-                        <li><a href="">IPad</a></li>
-                    </ul>
-                </div>
-                <div class="product-gallery-one-content-product">
-                    <div class="product-gallery-one-content-product-item">
-                        <img src="~/image/product/product1.jpg" alt="">
-                        <div class="product-gallery-one-content-product-item-text">
-                            <li><img src="~/image/icon/icon1.png" alt=""><p>Trợ giá mua ngay</p></li>
-                            <li>Xiaomi Redmi Note 13 Pro 8G 256GB</li>
-                            <li>Online giá rẻ</li>
-                            <li><a href="">11.990.000<sup>đ</sup></a><span>-7%</span></li>
-                            <li>10.990.000<sup>đ</sup></li>
-                            <li>Quà 100.000<sup>đ</sup></li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="product-gallery-one-content-product-item">
-                        <img src="~/image/product/product1.jpg" alt="">
-                        <div class="product-gallery-one-content-product-item-text">
-                            <li><img src="~/image/icon/icon1.png" alt=""><p>Trợ giá mua ngay</p></li>
-                            <li>Xiaomi Redmi Note 13 Pro 8G 256GB</li>
-                            <li>Online giá rẻ</li>
-                            <li><a href="">11.990.000<sup>đ</sup></a><span>-7%</span></li>
-                            <li>10.990.000<sup>đ</sup></li>
-                            <li>Quà 100.000<sup>đ</sup></li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="product-gallery-one-content-product-item">
-                        <img src="~/image/product/product1.jpg" alt="">
-                        <div class="product-gallery-one-content-product-item-text">
-                            <li><img src="~/image/icon/icon1.png" alt=""><p>Trợ giá mua ngay</p></li>
-                            <li>Xiaomi Redmi Note 13 Pro 8G 256GB</li>
-                            <li>Online giá rẻ</li>
-                            <li><a href="">11.990.000<sup>đ</sup></a><span>-7%</span></li>
-                            <li>10.990.000<sup>đ</sup></li>
-                            <li>Quà 100.000<sup>đ</sup></li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="product-gallery-one-content-product-item">
-                        <img src="~/image/product/product1.jpg" alt="">
-                        <div class="product-gallery-one-content-product-item-text">
-                            <li><img src="~/image/icon/icon1.png" alt=""><p>Trợ giá mua ngay</p></li>
-                            <li>Xiaomi Redmi Note 13 Pro 8G 256GB</li>
-                            <li>Online giá rẻ</li>
-                            <li><a href="">11.990.000<sup>đ</sup></a><span>-7%</span></li>
-                            <li>10.990.000<sup>đ</sup></li>
-                            <li>Quà 100.000<sup>đ</sup></li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="product-gallery-one-content-product-item">
-                        <img src="~/image/product/product1.jpg" alt="">
-                        <div class="product-gallery-one-content-product-item-text">
-                            <li><img src="~/image/icon/icon1.png" alt=""><p>Trợ giá mua ngay</p></li>>
-                            <li>Xiaomi Redmi Note 13 Pro 8G 256GB</li>
-                            <li>Online giá rẻ</li>
-                            <li><a href="">11.990.000<sup>đ</sup></a><span>-7%</span></li>
-                            <li>10.990.000<sup>đ</sup></li>
-                            <li>Quà 100.000<sup>đ</sup></li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="product-gallery-one-content-product-item">
-                        <img src="~/image/product/product1.jpg" alt="">
-                        <div class="product-gallery-one-content-product-item-text">
-                            <li><img src="~/image/icon/icon1.png" alt=""><p>Trợ giá mua ngay</p></li>
-                            <li>Xiaomi Redmi Note 13 Pro 8G 256GB</li>
-                            <li>Online giá rẻ</li>
-                            <li><a href="">11.990.000<sup>đ</sup></a><span>-7%</span></li>
-                            <li>10.990.000<sup>đ</sup></li>
-                            <li>Quà 100.000<sup>đ</sup></li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="product-gallery-one-content-product-item">
-                        <img src="~/image/product/product1.jpg" alt="">
-                        <div class="product-gallery-one-content-product-item-text">
-                            <li><img src="~/image/icon/icon1.png" alt=""><p>Trợ giá mua ngay</p></li>
-                            <li>Xiaomi Redmi Note 13 Pro 8G 256GB</li>
-                            <li>Online giá rẻ</li>
-                            <li><a href="">11.990.000<sup>đ</sup></a><span>-7%</span></li>
-                            <li>10.990.000<sup>đ</sup></li>
-                            <li>Quà 100.000<sup>đ</sup></li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="product-gallery-one-content-product-item">
-                        <img src="~/image/product/product1.jpg" alt="">
-                        <div class="product-gallery-one-content-product-item-text">
-                            <li><img src="~/image/icon/icon1.png" alt=""><p>Trợ giá mua ngay</p></li>
-                            <li>Xiaomi Redmi Note 13 Pro 8G 256GB</li>
-                            <li>Online giá rẻ</li>
-                            <li><a href="">11.990.000<sup>đ</sup></a><span>-7%</span></li>
-                            <li>10.990.000<sup>đ</sup></li>
-                            <li>Quà 100.000<sup>đ</sup></li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="product-gallery-one-content-product-item">
-                        <img src="~/image/product/product1.jpg" alt="">
-                        <div class="product-gallery-one-content-product-item-text">
-                            <li><img src="~/image/icon/icon1.png" alt=""><p>Trợ giá mua ngay</p></li>
-                            <li>Xiaomi Redmi Note 13 Pro 8G 256GB</li>
-                            <li>Online giá rẻ</li>
-                            <li><a href="">11.990.000<sup>đ</sup></a><span>-7%</span></li>
-                            <li>10.990.000<sup>đ</sup></li>
-                            <li>Quà 100.000<sup>đ</sup></li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="product-gallery-one-content-product-item">
-                        <img src="~/image/product/product1.jpg" alt="">
-                        <div class="product-gallery-one-content-product-item-text">
-                            <li><img src="~/image/icon/icon1.png" alt=""><p>Trợ giá mua ngay</p></li>
-                            <li>Xiaomi Redmi Note 13 Pro 8G 256GB</li>
-                            <li>Online giá rẻ</li>
-                            <li><a href="">11.990.000<sup>đ</sup></a><span>-7%</span></li>
-                            <li>10.990.000<sup>đ</sup></li>
-                            <li>Quà 100.000<sup>đ</sup></li>
-                            <li>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     @* Nội dung riêng của từng View sẽ được đặt tại đây *@
     @* 2. Body *@

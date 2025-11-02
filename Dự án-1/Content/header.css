@@ -24,12 +24,12 @@ a {
 }
 
 header {
-    background-color: #E24C5A;
+    background-color: #fff;
     text-align: center;
 }
 /*-----------------------nav--------------------------------*/
 nav {
-    background-color: #D91926;
+    background-color: #d70018;
 }
 
     nav ul {
@@ -38,7 +38,7 @@ nav {
         align-items: center;
     }
 
-        nav ul li, a {
+        nav ul li a {
             color: white;
             font-size: 12px;
         }
